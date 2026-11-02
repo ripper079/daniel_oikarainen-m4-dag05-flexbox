@@ -24,7 +24,7 @@ header {
 }
 
 header h1 {
-  margin: 0 0 8px;      /* Tror att denna ställer till det med alignment när flexbox aktiveras för header elementen */
+  margin: 0 0 8px;    /* Tror att denna ställer till det med alignment när flexbox aktiveras för header elementen */
 }
 
 nav ul {
@@ -80,6 +80,13 @@ footer {
   background-color: #2b1c14;
   color: #ffffff;
   padding: 24px;
+
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
 }
 
 footer a {
