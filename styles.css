@@ -229,3 +229,31 @@ legend {
   font-weight: 700;
   padding: 0 8px;
 }
+
+
+/* Burger menu - Gör den osynlig */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;    /* Gör hamburgaren vit */
+  font-size: 2rem;    /* Gör hamburgaren större */
+}
+
+
+@media (max-width: 600px) {
+
+  .menu-toggle { display: block; }
+/* Dölj nav baren*/
+  nav {
+    display: none;
+    width: 100%;
+  }
+/* Har element class open, visa den som block element */
+/* Denna class läggs till i javascriptet */
+  nav.open { display: block; }
+/* Flex  på länklistan */
+  nav ul {
+    flex-direction: column;
+  }
+}

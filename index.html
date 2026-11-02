@@ -9,6 +9,9 @@
   <body>
     <header>
       <h1>Kafé Kardemumma</h1>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
       <nav aria-label="Huvudmeny">
         <ul>
           <li><a href="#meny">Meny</a></li>
@@ -77,5 +80,15 @@
         <a href="mailto:hej@kardemumma.example">hej@kardemumma.example</a>
       </address>
     </footer>
+    <!-- Inline....buuuhhhh-->
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector("nav");
+
+      toggle.addEventListener("click", () => {
+        const isOpen = nav.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", isOpen);
+      });
+    </script>
   </body>
 </html>
