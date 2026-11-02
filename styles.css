@@ -24,7 +24,7 @@ header {
 }
 
 header h1 {
-  margin: 0 0 8px;    /* Tror att denna ställer till det med alignment när flexbox aktiveras för header elementen */
+  margin: 0;  
 }
 
 nav ul {
