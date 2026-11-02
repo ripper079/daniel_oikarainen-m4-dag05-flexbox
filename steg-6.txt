@@ -1,0 +1,13 @@
+För en flexkolumn blir allt spegelvänt när du tittar på bilden.
+
+Rad 1 blir Box A
+Rad 2 blir Box B
+Rad 3 blir Box C
+
+korsaxeln kommer styras av align-items
+och
+huvudaxeln kommer styras av justify-content
+
+Puuhhh, gäller har en mentalt bild i huvudet här...
+garanterat man kommer bland ihop dessa.
+Öve öva och öva!
