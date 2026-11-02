@@ -15,11 +15,25 @@ body {
 header {
   background-color: #5b3a29;
   color: #ffffff;
-  padding: 16px 24px;
-
+  padding: 16px 24px; 
+  /* Enable Flexbox */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /*justify-content: center;*/            /* Centrerar h1 och nav. Se till och använd gap med denna inställning*/  
+  /*justify-content: flex-end;*/          /* Bra för länder som skriver från höger till vänster -  */
+  /* justify-content: space-around;*/     /* Avståndet mellan elementen är lika stora - avståndet mellan ytterkant av element till container kant är halva det som flexitem har  */
+  justify-content: space-between;         /* Trycker ut h1 och nav mot sidorna */
+  
+  /* Dessa påverkar hur child aka flex item positioneras i krossaxeln */
+  /* Dessa sätter man med flex-direction */
+  /* OM flex-direction: row eller  row-reverse  (default är row om amn inte anger denna attribut)*/
+  /* betyder att huvudaxeln går horisontellt och korsaxel går vertikalt */
+  /* ELLER om  flex-direction: column eller column-reverse  */
+  /* betyder att huvudaxeln går vertikalt  och korsaxel går horisontellt dvs tvärtom */
+  
+  /* align-items: flex-end;*/             /* I detta fall trycks flex items ner */
+  /* align-items: flex-start;*/           /* I detta fall trycks flex items upp */
+  align-items: center;                    /* Centrerar i detta fall i vertikal led */
+  
   flex-wrap: wrap;
 }
 
@@ -83,7 +97,6 @@ footer {
   background-color: #2b1c14;
   color: #ffffff;
   padding: 24px;
-
   
   display: flex;
   justify-content: space-between;
