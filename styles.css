@@ -57,6 +57,9 @@ article {
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 16px;
+
+  display: flex;              /* Steg 4 */
+  flex-direction: column;     /* Steg 4*/
 }
 
 article img,
@@ -86,7 +89,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-
+  gap: 20px;
 }
 
 footer a {
@@ -130,6 +133,7 @@ h3 {
 .pris {
   font-weight: 700;
   color: #8c1010;
+  margin-top: auto;
 }
 
 a {
